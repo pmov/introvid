@@ -101,9 +101,9 @@ function preload(){
 
   tempbg = loadImage('images/haha.jpg');
 
-  gameSound = loadSound('Sounds/gameSoundTrial.mp3');
-  winSound = loadSound('Sounds/Win.mp3');
-  loseSound = loadSound('Sounds/Fail.mp3');
+  //gameSound = loadSound('Sounds/gameSoundTrial.mp3');
+ // winSound = loadSound('Sounds/Win.mp3');
+  //loseSound = loadSound('Sounds/Fail.mp3');
 
   marineNinjaLogo_img = loadImage('images/Logo.png');
   Level2Btn_img = loadImage('images/Level2Btn.png');
@@ -245,8 +245,8 @@ function setup() {
   playAgain.scale = 0.75;
   playAgain.visible = false;
 
-  gameSound.loop();
-  gameSound.play();
+ // gameSound.loop();
+  //gameSound.play();
 
 }
 
@@ -415,8 +415,8 @@ if(gameState === "WIN"){
   life3.visible = false;
   life4.visible = false;
   life5.visible = false;
- play = true;
- playSound();
+ //play = true;
+ //playSound();
 
  //winSound.play();
  
@@ -433,8 +433,8 @@ if(gameState === "END"){
   marineNinjaLogo.x = 112;
   marineNinjaLogo.y = 115;
 
-  play = true;
-  playSoundWhenLost();
+  //play = true;
+  //playSoundWhenLost();
 
   if(mousePressedOver(playAgain)){
    redirect();
@@ -620,7 +620,7 @@ function greet() {
 }
 
 function redirect() {
-  window.location.href = 'https://beingadithya.github.io/1play/';
+  window.location.href = '../lvl1';
 }
 
 
